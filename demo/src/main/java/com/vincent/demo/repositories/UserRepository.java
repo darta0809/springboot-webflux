@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 import reactor.core.publisher.Flux;
 
 @EnableMongoRepositories
-public interface UserDao extends ReactiveMongoRepository<User, String> {
+public interface UserRepository extends ReactiveMongoRepository<User, String> {
 
     Flux<User> findUserByUsernameContaining(String name);
 }
