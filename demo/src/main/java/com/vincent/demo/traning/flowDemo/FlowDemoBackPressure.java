@@ -5,7 +5,7 @@ import java.util.concurrent.Flow;
 import java.util.concurrent.Flow.Subscription;
 import java.util.concurrent.SubmissionPublisher;
 
-public class FlowDemoBackpressure {
+public class FlowDemoBackPressure {
 
     public void flowBase() {
         SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
