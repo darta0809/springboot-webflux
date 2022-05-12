@@ -1,7 +1,7 @@
 package com.vincent.demo;
 
 import com.vincent.demo.traning.flowDemo.FlowDemo;
-import com.vincent.demo.traning.flowDemo.FlowDemoBackpressure;
+import com.vincent.demo.traning.flowDemo.FlowDemoBackPressure;
 import com.vincent.demo.traning.flowDemo.FlowDemoProcessor;
 import com.vincent.demo.traning.lambda.Lambda_Base;
 import com.vincent.demo.traning.lambda.Lambda_Fuction;
@@ -21,7 +21,7 @@ public class DemoApplication {
         Lambda_UnaryOperAtor lambda_unaryOperAtor = new Lambda_UnaryOperAtor();
         Lambda_Predicate lambda_predicate = new Lambda_Predicate();
         FlowDemo flowDemo = new FlowDemo();
-        FlowDemoBackpressure flowDemoBackpressure = new FlowDemoBackpressure();
+        FlowDemoBackPressure flowDemoBackpressure = new FlowDemoBackPressure();
         FlowDemoProcessor flowDemoProcessor = new FlowDemoProcessor();
         // StreamBase streamBase = new StreamBase();
         // streamBase.collectBase();
