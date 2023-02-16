@@ -2,6 +2,7 @@ package com.vincent.demo.controller;
 
 import com.vincent.demo.entity.User;
 import com.vincent.demo.repositories.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -12,10 +13,10 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/user")
+@RequiredArgsConstructor
 public class UserController {
 
-    @Autowired
-    UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @PostMapping("/")
     public Mono<User> addUser(@RequestBody User user) {

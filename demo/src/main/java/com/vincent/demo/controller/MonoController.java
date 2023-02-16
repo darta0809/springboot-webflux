@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono;
 public class MonoController {
 
     /**
-     * SpringMVC
+     * RESTful
      */
     @GetMapping("/hello")
     public String hello() {

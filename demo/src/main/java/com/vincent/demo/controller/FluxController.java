@@ -15,7 +15,7 @@ public class FluxController {
      */
     @GetMapping(value = "/flux", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<String> flux() {
-        Flux<String> flux = Flux.fromArray(new String[]{"javaboy", "itboyhub", "www.javaboy.org", "itboyhub.com"}).map(s -> {
+        return Flux.fromArray(new String[]{"javaboy", "itboyhub", "www.javaboy.org", "itboyhub.com"}).map(s -> {
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
@@ -23,6 +23,5 @@ public class FluxController {
             }
             return "my->data->" + s;
         });
-        return flux;
     }
 }
