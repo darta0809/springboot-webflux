@@ -9,7 +9,7 @@ public class FlowDemoBackPressure {
 
     public void flowBase() {
         SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
-        Flow.Subscriber<String> subscriber = new Flow.Subscriber<String>() {
+        Flow.Subscriber<String> subscriber = new Flow.Subscriber<>() {
             private Flow.Subscription subscription;
 
             @Override
